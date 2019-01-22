@@ -1,5 +1,5 @@
 @font-face {
-  font-family:"Open Sans";
+  font-family: "Open Sans";
   src: url(fonts/OpenSans-Regular.ttf);
   font-weight: 400;
   font-style: normal;
@@ -21,7 +21,8 @@ html {
 }
 
 body {
-  min-width: 1100px;;
+  min-width: 1100px;
+  ;
   margin: 0;
 }
 
@@ -101,7 +102,7 @@ a:hover {
 h1 {
   width: 750px;
   margin: 0 auto;
-  font: normal 700 4.5rem/1.7 ""Open Sans"", Arial, sans-serif;
+  font: normal 700 4.5rem/1.7 "Open Sans", Arial, sans-serif;
   text-transform: uppercase;
   color: #ffffff;
   text-align: center;
@@ -112,26 +113,32 @@ h1 {
   flex-wrap: wrap;
   justify-content: space-between;
   min-width: 960px;
-  max-width: 1170px; ;
+  max-width: 1200px;
   padding: 64px 15px 0;
   margin: 0 auto;
 }
 
-
 .news-block {
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: flex-start;
+  width: 778px;
   margin-bottom: 61px;
 }
-.news-block:after {
+
+/* .news-block:after {
   content: " ";
   visibility: hidden;
   display: block;
   height: 0;
   clear: both;
-}    
+}     */
 
 .news-block__picture {
+  display: block;
   width: 380px;
-  float: left;
   margin-right: 30px;
 }
 
@@ -144,11 +151,11 @@ h1 {
   display: inline-block;
   margin-right: 10px;
   font: normal 700 1.4rem/1.2 "Open Sans", Arial, sans-serif;
-  color:#b59f5b;
+  color: #b59f5b;
   text-transform: uppercase;
 }
 
-.news-block h2 {
+.news-block__title  {
   font: normal 700 2rem/1.2 "Open Sans", Arial, sans-serif;
   margin-top: 6px;
   margin-bottom: 30px;
@@ -168,13 +175,16 @@ h1 {
   font: normal 700 1.2rem/1.2 "Open Sans", Arial, sans-serif;
 }
 
-.news-block p {
-  width: 780px;
+.news-block__info {
+  margin-bottom: 45px;
+}
+
+.news-block__intro {
   font: normal 400 1.5rem/1.5 "Open Sans", Arial, sans-serif;
 }
 
 .sidebar h3 {
-  margin-top: 0; 
+  margin-top: 0;
   margin-bottom: -4px;
   font: normal 700 1.4rem/1.2 "Open Sans", Arial, sans-serif;
   text-transform: uppercase;
@@ -186,8 +196,9 @@ h1 {
   display: block;
   width: 66px;
   height: 3px;
-  background-color:#e1d9bd;
-  margin: 9px auto 30px; ;
+  background-color: #e1d9bd;
+  margin: 9px auto 30px;
+  ;
 }
 
 .recent-post__picture {
@@ -218,15 +229,13 @@ h1 {
   margin-bottom: 0;
 }
 
-
 .recent-post:after {
   content: " ";
   visibility: hidden;
   display: block;
   height: 0;
   clear: both;
-} 
-
+}
 
 .search {
   display: flex;
@@ -248,7 +257,7 @@ h1 {
   width: 50px;
   height: 50px;
   border: none;
-  background-color:#b59f5b;
+  background-color: #b59f5b;
   padding: 0;
 }
 
