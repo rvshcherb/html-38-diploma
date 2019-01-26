@@ -66,7 +66,7 @@ a:hover {
   min-width: 960px;
   max-width: 1200px;
   padding: 45px 18px 12px;
-  margin: 0 auto;
+  margin: 0 auto 85px;
 }
 
 .logo {
@@ -92,13 +92,6 @@ a:hover {
   color: #ffffff;
 }
 
-.first-screen {
-  min-width: 960px;
-  max-width: 1200px;
-  padding: 85px 15px;
-  margin: 0 auto;
-}
-
 h1 {
   width: 750px;
   margin: 0 auto;
@@ -118,28 +111,26 @@ h1 {
   margin: 0 auto;
 }
 
+.news {
+  width: 778px;
+}
+
 .news-block {
   display: flex;
   /* flex-wrap: wrap; */
   flex-direction: row;
   justify-content: flex-start;
   align-content: flex-start;
-  width: 778px;
   margin-bottom: 61px;
 }
 
-/* .news-block:after {
-  content: " ";
-  visibility: hidden;
-  display: block;
-  height: 0;
-  clear: both;
-}     */
+.picture-wrapper {
+  margin-right: 30px;
+}
 
 .news-block__picture {
   display: block;
   width: 380px;
-  margin-right: 30px;
 }
 
 .news-block__header {
@@ -147,11 +138,19 @@ h1 {
   margin-bottom: 43px;
 }
 
+.news-block_tag-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.news-block_tag-link {
+  color: #b59f5b;
+}
+
 .tags {
   display: inline-block;
   margin-right: 10px;
   font: normal 700 1.4rem/1.2 "Open Sans", Arial, sans-serif;
-  color: #b59f5b;
   text-transform: uppercase;
 }
 
@@ -179,11 +178,11 @@ h1 {
   margin-bottom: 45px;
 }
 
-.news-block__intro {
+.news-block_intro {
   font: normal 400 1.5rem/1.5 "Open Sans", Arial, sans-serif;
 }
 
-.sidebar h3 {
+.sidebar h2 {
   margin-top: 0;
   margin-bottom: -4px;
   font: normal 700 1.4rem/1.2 "Open Sans", Arial, sans-serif;
@@ -191,7 +190,7 @@ h1 {
   text-align: center;
 }
 
-.sidebar h3:after {
+.sidebar h2:after {
   content: "";
   display: block;
   width: 66px;
@@ -199,6 +198,10 @@ h1 {
   background-color: #e1d9bd;
   margin: 9px auto 30px;
   ;
+}
+
+.recent-posts {
+  width: 271px;
 }
 
 .recent-post__picture {
@@ -214,7 +217,7 @@ h1 {
 }
 
 .recent-post {
-  width: 271px;
+  display: flex;
   margin-bottom: 22px;
 }
 
@@ -222,7 +225,7 @@ h1 {
   margin-bottom: 60px;
 }
 
-.recent-post h4 {
+.recent-post h3 {
   font: normal 700 1.4rem/1.2 "Open Sans", Arial, sans-serif;
   text-transform: uppercase;
   margin-top: 5px;
@@ -270,13 +273,16 @@ h1 {
   fill: #ffffff
 }
 
+.subscription {
+  width: 270px;
+}
 .subscription-form {
   margin-bottom: 60px;
 }
 
 .subscription-form-input {
   display: block;
-  width: 270px;
+  width: 100%;
   height: 50px;
   border: none;
   padding: 0 18px;
@@ -286,8 +292,8 @@ h1 {
 }
 
 .subscription-button {
-  width: 270px;
   height: 50px;
+  width: 100%;
   border: none;
   padding: 0 18px;
   font: normal 700 1.4rem/1.2 "Open Sans", Arial, sans-serif;
@@ -297,6 +303,8 @@ h1 {
 }
 
 .tag-list {
+  list-style-type: none;
+  padding-left: 0;
   width: 270px;
   display: flex;
   flex-wrap: wrap;
@@ -315,25 +323,30 @@ h1 {
   margin-bottom: 14px;
 }
 
+.categorie-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
 .categorie {
   padding: 14px 1px;
   border-bottom: 1px solid #eeeeee;
   font: normal 700 1.4rem/1.2 "Open Sans", Arial, sans-serif;
 }
 
-.categorie__counter {
+.categorie_counter {
   font: normal 700 1.2rem/1.2 "Open Sans", Arial, sans-serif;
   color: #b59f5b;
 }
 
-footer {
+.footer {
   margin: 0 auto;
   max-width: 1170px;
   text-align: center;
   padding-bottom: 35px;
 }
 
-footer ul {
+.footer-nav_list {
   display: flex;
   flex-wrap: wrap;
   height: 85px;
@@ -344,11 +357,11 @@ footer ul {
   background-color: #f4f7f6;
 }
 
-footer li {
+.smm-icon {
   list-style-type: none;
 }
 
-.smm-icon a {
+.smm-link {
   display: block;
   width: 20px;
   height: 20px;
