@@ -141,6 +141,7 @@ h1 {
 .news-block_tag-list {
   list-style-type: none;
   padding-left: 0;
+  margin-top: 0;
 }
 
 .news-block_tag-link {
@@ -184,7 +185,7 @@ h1 {
 
 .sidebar h2 {
   margin-top: 0;
-  margin-bottom: -4px;
+  margin-bottom: 24px;
   font: normal 700 1.4rem/1.2 "Open Sans", Arial, sans-serif;
   text-transform: uppercase;
   text-align: center;
@@ -196,7 +197,7 @@ h1 {
   width: 66px;
   height: 3px;
   background-color: #e1d9bd;
-  margin: 9px auto 30px;
+  margin: 9px auto 0;
   ;
 }
 
@@ -232,13 +233,6 @@ h1 {
   margin-bottom: 0;
 }
 
-.recent-post:after {
-  content: " ";
-  visibility: hidden;
-  display: block;
-  height: 0;
-  clear: both;
-}
 
 .search {
   display: flex;
@@ -350,7 +344,7 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   height: 85px;
-  margin-bottom: 70px;
+  margin-bottom: 58px;
   padding: 0;
   align-items: center;
   justify-content: center;
@@ -391,7 +385,7 @@ h1 {
   background-image: url(img/social/003-tumblr.svg);
 }
 
-.smm-text {
+.smm-text, .subscribe-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -401,5 +395,9 @@ h1 {
 .copyright {
   display: inline-block;
   font: normal 700 1.2rem/1.2 "Open Sans", Arial, sans-serif;
+  color: #999999;
+}
+
+.copyright-link {
   color: #999999;
 }
